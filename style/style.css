@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(29, 29, 29);
+    font-family: monospace;
+    font-size: 5vmin;
+    color:white;
+}
+
+button{
+    font-family: monospace;
+    font-size: 5vmin;
+    font-weight: bold;
+    color:white;
+    background:linear-gradient(90deg, orange,red);
+    padding: 4vmin;
+    border: 0;
+    border-radius: 2vmax;
+    box-shadow: 3vmin 3vmin 0rem black;
+    outline: none;
+    transition: all 1s ease;
+}
+button:hover{
+    box-shadow: 0 0 0 black;
+}
+
+#layers{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+}
+#layers div{
+    text-shadow: 0.1rem 0.1rem 0rem black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 3vmax black;
+    height: 10vh;
+}
+
+#l1{
+    background: yellow;
+    z-index: 0;
+}
+#l2{
+    background: orange;
+    z-index: 1;
+}
+#l3{
+    background: orangered;
+    z-index: 2;
+}
+#l4{
+    background: red;
+    z-index: 3;
+}
+
+#modify{
+    position: absolute;
+    bottom:10vh;
+    right:10vw;
+
+}
